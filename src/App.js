@@ -21,6 +21,8 @@ function App() {
       .then((res) => res.json())
       .then((res) => {
         setData(res);
+      }).catch((err) => {
+        console.log(err);
       });
   }, []);
 
@@ -38,7 +40,7 @@ function App() {
   return (
     <div className={style.app}>
       <div className={style.header}>
-        <img src={data?.logo} className={style.header_logo} />
+        <img src={data?.logo} className={style.header_logo} alt='Aoc_logo' />
       </div>
 
       <div className={style.container}>{cardStack}</div>
