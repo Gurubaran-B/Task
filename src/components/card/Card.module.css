@@ -1,138 +1,136 @@
 .container {
-    width: calc(100% / 3);
-    height: calc(100% / 2);
-    display: flex;
-    align-items: flex-end;
-    padding-left: 60px;
-  }
-  
-  .container_l {
-    width: 40%;
+  width: calc(100% / 3);
+  height: calc(100% / 2);
+  display: flex;
+  align-items: flex-end;
+  padding-left: 60px;
+}
+
+.container_l {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.container_r {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_container {
+  width: 80%;
+}
+
+.description {
+  font-size: 10px;
+}
+
+.divider {
+  width: 90%;
+  border: 1px solid white;
+}
+
+.image_wrapper {
+  width: 95%;
+  height: 95%;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.logo_container {
+  height: 10%;
+  width: 50%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    align-items: center;
     justify-content: center;
-    align-items: start;
-    gap: 10px;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.2;
   }
-  
+
+  .container_l {
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+
   .container_r {
-    width: 40%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
-  
+
   .title_container {
     width: 80%;
   }
-  
+
   .description {
-    font-size: 10px;
+    font-size: 20px;
   }
-  
+
   .divider {
     width: 90%;
     border: 1px solid white;
   }
-  
+
   .image_wrapper {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
   }
-  
+
   .image {
     height: 100%;
     width: 100%;
-    object-fit: scale-down;
+    object-fit: contain;
   }
-  
+
   .logo_container {
-    height: 10%;
-    width: 50%;
+    height: 20%;
+    width: 20%;
   }
-  
+
   .logo {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-    .container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        padding:20px;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .container_l {
-        width: 100%;
-        height: 50%;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 1.2;
-        padding-left: 40px;
-        margin-bottom: 30px;
-      }
-      
-      .container_r {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        
-      }
-      
-      .title_container {
-        width: 80%;
-      }
-      
-      .description {
-        font-size: 20px;
-      }
-      
-      .divider {
-        width: 90%;
-        border: 1px solid white;
-      }
-      
-      .image_wrapper {
-        width: 100%;
-        height: 100%;
-      }
-      
-      .image {
-        height: 100%;
-        width: 100%;
-        object-fit: scale-down;
-      }
-      
-      .logo_container {
-        height: 20%;
-        width: 20%;
-      }
-      
-      .logo {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
 }
 
 @media only screen and (min-width: 1224px) {
@@ -149,9 +147,7 @@
   .description {
     font-size: 10px;
   }
-
 }
-
 
 @media only screen and (min-width: 1824px) {
   .container {
@@ -175,5 +171,4 @@
     width: 90%;
     height: 90%;
   }
-
 }
