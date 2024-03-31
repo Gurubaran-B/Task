@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/* Fonts */
+:root {
+  --main-font: 'Open Sans', sans-serif; /* Added a fallback font */
+}
+  
+/* Colors */
+:root {
+  --primary-color: #ffffff;
+}
+  
+/* Media Queries */
+:root {
+  --mobile: @media (max-width: 767px);
+  --tablet: @media (min-width: 768px) and (max-width: 991px);
+  --desktop: @media (min-width: 992px) and (max-width: 1199px);
+  --large-desktop: @media (min-width: 1200px);
+}
+  
