@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Carousel.css";
+import style from "./Carousel.module.css";
 
 function Carousel({ children }) {
   const [current, setCurrent] = useState(0);
@@ -40,12 +40,12 @@ function Carousel({ children }) {
   }
 
   return (
-    <div className="container">
-      <div className="wrapper">
-        <div className="slider">
+    <div className={`${style.container}`} >
+      <div className={`${style.wrapper}`}>
+        <div className={`${style.slider}`}>
           {children?.map((child, i) => (
             <div
-              className={"slide"}
+              className={`${style.slide}`}
               onTouchStart={onTouchStart}
               onTouchMove={onTouchMove}
               onTouchEnd={onTouchEnd}
@@ -57,10 +57,10 @@ function Carousel({ children }) {
           ))}
         </div>
 
-        <div className="dots">
+        <div className={`${style.dots}`}>
           {children?.map((_, i) => (
             <div
-              className={current == i ? "dotActive" : "dot"}
+              className={current == i ? style.dotActive : style.dot}
               key={i}
               onClick={() => goTo(i)}
             ></div>
@@ -68,10 +68,10 @@ function Carousel({ children }) {
         </div>
       </div>
 
-      <button className={"right"} onClick={() => nextSlide()}>
+      <button className={`${style.right}`} onClick={() => nextSlide()}>
         &#10095;
       </button>
-      <button className={"left"} onClick={() => prevSlide()}>
+      <button className={`${style.left}`} onClick={() => prevSlide()}>
         &#10094;
       </button>
     </div>
